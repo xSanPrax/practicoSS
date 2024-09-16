@@ -1,0 +1,12 @@
+uy/edu/fing/tse/demo2023/model/Vehiculos.class
+uy/edu/fing/tse/demo2023/service/HechoService.class
+uy/edu/fing/tse/demo2023/persistence/IVehiculosDAO.class
+uy/edu/fing/tse/demo2023/util/qualifier/TSE2023DB.class
+uy/edu/fing/tse/demo2023/persistence/impl/VehiculosDAO.class
+uy/edu/fing/tse/demo2023/util/EntityManagerProducer.class
+uy/edu/fing/tse/demo2023/entity/Hecho.class
+uy/edu/fing/tse/demo2023/service/impl/VehiculosService.class
+uy/edu/fing/tse/demo2023/entity/Vehiculo.class
+uy/edu/fing/tse/demo2023/service/impl/HechoDAO.class
+uy/edu/fing/tse/demo2023/dto/VehiculoDTO.class
+uy/edu/fing/tse/demo2023/service/IVehiculosService.class
