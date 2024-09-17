@@ -1,5 +1,11 @@
 Manifest-Version: 1.0
 Created-By: Maven EJB Plugin 3.1.0
-Build-Jdk-Spec: 21
-Class-Path: 
+Build-Jdk-Spec: 22
+Class-Path: lib/hibernate-core.jar lib/jboss-logging.jar lib/javax.persi
+ stence-api.jar lib/javassist.jar lib/byte-buddy.jar lib/antlr.jar lib/j
+ boss-transaction-api_1.2_spec.jar lib/jandex.jar lib/classmate.jar lib/
+ javax.activation-api.jar lib/dom4j.jar lib/hibernate-commons-annotation
+ s.jar lib/jaxb-api.jar lib/jaxb-runtime.jar lib/jakarta.xml.bind-api.ja
+ r lib/txw2.jar lib/istack-commons-runtime.jar lib/jakarta.activation.ja
+ r
 

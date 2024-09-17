@@ -1,12 +1,12 @@
-/Users/santiagosaret/Downloads/demo2023/demo2023-ejb/src/main/java/uy/edu/fing/tse/demo2023/util/qualifier/TSE2023DB.java
-/Users/santiagosaret/Downloads/demo2023/demo2023-ejb/src/main/java/uy/edu/fing/tse/demo2023/service/impl/HechoDAO.java
-/Users/santiagosaret/Downloads/demo2023/demo2023-ejb/src/main/java/uy/edu/fing/tse/demo2023/entity/Hecho.java
-/Users/santiagosaret/Downloads/demo2023/demo2023-ejb/src/main/java/uy/edu/fing/tse/demo2023/service/HechoService.java
-/Users/santiagosaret/Downloads/demo2023/demo2023-ejb/src/main/java/uy/edu/fing/tse/demo2023/persistence/IVehiculosDAO.java
-/Users/santiagosaret/Downloads/demo2023/demo2023-ejb/src/main/java/uy/edu/fing/tse/demo2023/model/Vehiculos.java
-/Users/santiagosaret/Downloads/demo2023/demo2023-ejb/src/main/java/uy/edu/fing/tse/demo2023/util/EntityManagerProducer.java
-/Users/santiagosaret/Downloads/demo2023/demo2023-ejb/src/main/java/uy/edu/fing/tse/demo2023/dto/VehiculoDTO.java
-/Users/santiagosaret/Downloads/demo2023/demo2023-ejb/src/main/java/uy/edu/fing/tse/demo2023/entity/Vehiculo.java
-/Users/santiagosaret/Downloads/demo2023/demo2023-ejb/src/main/java/uy/edu/fing/tse/demo2023/service/IVehiculosService.java
-/Users/santiagosaret/Downloads/demo2023/demo2023-ejb/src/main/java/uy/edu/fing/tse/demo2023/persistence/impl/VehiculosDAO.java
-/Users/santiagosaret/Downloads/demo2023/demo2023-ejb/src/main/java/uy/edu/fing/tse/demo2023/service/impl/VehiculosService.java
+/Users/santiagosaret/Documents/practico1/practicoSS/Copia de demo2023/demo2023-ejb/src/main/java/uy/edu/fing/tse/demo2023/entity/Vehiculo.java
+/Users/santiagosaret/Documents/practico1/practicoSS/Copia de demo2023/demo2023-ejb/src/main/java/uy/edu/fing/tse/demo2023/dto/VehiculoDTO.java
+/Users/santiagosaret/Documents/practico1/practicoSS/Copia de demo2023/demo2023-ejb/src/main/java/uy/edu/fing/tse/demo2023/persistence/impl/VehiculosDAO.java
+/Users/santiagosaret/Documents/practico1/practicoSS/Copia de demo2023/demo2023-ejb/src/main/java/uy/edu/fing/tse/demo2023/service/impl/VehiculosService.java
+/Users/santiagosaret/Documents/practico1/practicoSS/Copia de demo2023/demo2023-ejb/src/main/java/uy/edu/fing/tse/demo2023/util/EntityManagerProducer.java
+/Users/santiagosaret/Documents/practico1/practicoSS/Copia de demo2023/demo2023-ejb/src/main/java/uy/edu/fing/tse/demo2023/model/Vehiculos.java
+/Users/santiagosaret/Documents/practico1/practicoSS/Copia de demo2023/demo2023-ejb/src/main/java/uy/edu/fing/tse/demo2023/service/HechoService.java
+/Users/santiagosaret/Documents/practico1/practicoSS/Copia de demo2023/demo2023-ejb/src/main/java/uy/edu/fing/tse/demo2023/persistence/IVehiculosDAO.java
+/Users/santiagosaret/Documents/practico1/practicoSS/Copia de demo2023/demo2023-ejb/src/main/java/uy/edu/fing/tse/demo2023/entity/Hecho.java
+/Users/santiagosaret/Documents/practico1/practicoSS/Copia de demo2023/demo2023-ejb/src/main/java/uy/edu/fing/tse/demo2023/service/IVehiculosService.java
+/Users/santiagosaret/Documents/practico1/practicoSS/Copia de demo2023/demo2023-ejb/src/main/java/uy/edu/fing/tse/demo2023/util/qualifier/TSE2023DB.java
+/Users/santiagosaret/Documents/practico1/practicoSS/Copia de demo2023/demo2023-ejb/src/main/java/uy/edu/fing/tse/demo2023/service/impl/HechoDAO.java

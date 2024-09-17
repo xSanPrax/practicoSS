@@ -29,29 +29,37 @@
     <description>This is the EAR POM file</description>
 
     <dependencies>
+        <!-- Depend on the EJB module -->
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>demo2023-ejb</artifactId>
             <type>ejb</type>
         </dependency>
 
-        <!-- Depend on the EJB module and WAR so that we can package them -->
+        <!-- Depend on the WAR modules -->
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>demo2023-web</artifactId>
             <type>war</type>
         </dependency>
         <dependency>
-        	<groupId>${project.groupId}</groupId>
-        	<artifactId>demo2023-services</artifactId>
-        	<type>war</type>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>demo2023-services</artifactId>
+            <type>war</type>
+        </dependency>
+
+        <!-- Hibernate Core -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <!-- No defines la versión aquí; se usa la versión del BOM -->
         </dependency>
     </dependencies>
 
     <build>
         <finalName>${project.parent.artifactId}</finalName>
         <plugins>
-			<!--EAR plugin: format of output file -->
+            <!-- EAR plugin configuration -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-ear-plugin</artifactId>
@@ -59,37 +67,38 @@
                 <configuration>
                     <!-- Tell Maven we are using Jakarta EE -->
                     <version>8</version>
-                    <!-- Use Jakarta EE ear libraries as needed. Jakarta EE ear libraries
-                        are in easy way to package any libraries needed in the ear, and automatically
+                    <!-- Use Jakarta EE EAR libraries as needed. Jakarta EE EAR libraries
+                        are an easy way to package any libraries needed in the EAR, and automatically
                         have any modules (EJB-JARs and WARs) use them -->
                     <defaultLibBundleDir>lib</defaultLibBundleDir>
                     <modules>
-                    <!-- Default context root of the web app is /demo2023-web.
-                        If a custom context root is needed, uncomment the following snippet to
-                        register our War as a web module and set the contextRoot property -->
-                    <!--
-                    <webModule>
-                        <groupId>${project.groupId}</groupId>
-                        <artifactId>demo2023-web</artifactId>
-                        <contextRoot>/demo2023</contextRoot>
-                    </webModule>
-                    -->
+                        <!-- Default context root of the web app is /demo2023-web.
+                             If a custom context root is needed, uncomment the following snippet to
+                             register our WAR as a web module and set the contextRoot property -->
+                        <!--
+                        <webModule>
+                            <groupId>${project.groupId}</groupId>
+                            <artifactId>demo2023-web</artifactId>
+                            <contextRoot>/demo2023</contextRoot>
+                        </webModule>
+                        -->
                     </modules>
                     <outputFileNameMapping>@{artifactId}@@{dashClassifier?}@.@{extension}@</outputFileNameMapping>
                 </configuration>
             </plugin>
-            <!-- The WildFly plug-in deploys your ear to a local WildFly / JBoss EAP container.
-                Due to Maven's lack of intelligence with EARs we need to configure
-                the WildFly Maven plug-in to skip deployment for all modules. We then enable
-                it specifically in the ear module. -->
+
+            <!-- WildFly Maven Plugin for deployment -->
             <plugin>
                 <groupId>org.wildfly.plugins</groupId>
                 <artifactId>wildfly-maven-plugin</artifactId>
+                <version>${version.wildfly.maven.plugin}</version>
                 <configuration>
                     <skip>false</skip>
+                    <deployment>
+                        <name>${project.artifactId}.ear</name>
+                    </deployment>
                 </configuration>
             </plugin>
         </plugins>
     </build>
-
 </project>
